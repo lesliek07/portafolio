@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+#root{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:  'navbar'
+                          'header'
+                          'portafolio'
+                          'footer'
+
+    ;
+    color: #d4d9df;
+    background-color: #0F172A;    
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+
+.nav{
+    display:flex;
+    background-color:#0F172A;
+    color: #d4d9df;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    grid-area: navbar;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+}
+
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width: 100px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    background-image: linear-gradient(to bottom, #0F172A,#2D467F);
+    padding: 20px;
+    width: 100vw;
+    overflow-y: hidden;
+
+}
+.header h1{
+    font-weight: 700;
+    animation: mostrar 2s 1 ;
+}
+@keyframes mostrar{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(5px);
+    }
+}
+.header p{
+    animation: sub 2s 1;
+}
+@keyframes sub{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transition: translateX(5px) ;
+    }
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.portafolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+.card img{
+    width: 90vw;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
