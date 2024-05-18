@@ -100,3 +100,26 @@
     align-items: center;
     row-gap: 15px;
 }
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+.info li{
+    margin: 1rem;
+}
+.info a{
+    text-decoration-color:none;
+}
+.fa-brands{
+    color:#edeff3;
+}
+a .fa-brands:hover{
+    color:#22c0e8;
+    font-size: 2em;
+}
+i:hover{
+    color: #22c0e8;
+}
