@@ -107,6 +107,10 @@
     align-items: center;
     gap:10px
 }
+.info h6{
+    font-size: 1.2rem;
+    font-weight: Bold;
+}
 .info li{
     margin: 1rem;
 }
