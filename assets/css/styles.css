@@ -229,7 +229,10 @@ i:hover{
         padding: 20px;
     
     }
+
     .logo img{
+        position: relative;
+        left: 20px;
         width: 100%;
         padding-top:2rem;
         
